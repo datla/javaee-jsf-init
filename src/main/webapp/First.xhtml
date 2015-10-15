@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+<h:form>
+<h:outputLabel id="firstNameOutputId" value="Firstname:" />
+<h:inputText id="firstNameInputId" 
+	value="#{UserRegistration.firstName}"/>
+	
+<h:outputLabel id="lastNameOutputId" value="Lastname:" />
+<h:inputText id="lastNameInputId" 
+	value="#{UserRegistration.lastName}"/>
+	
+<h:outputLabel id="ageOutputId" value="Age:" />
+<h:inputText id="ageInputId" 
+	value="#{UserRegistration.age}"/>
+	
+
+<h:outputLabel id="cityOutputId" value="City:" />
+<h:inputText id="cityInputId" 
+	value="#{UserRegistration.city}"/>
+
+<h:outputLabel id="salaryOutputId" value="Salary:" />
+<h:inputText id="salaryInputId" 
+	value="#{UserRegistration.salary}"/>
+	
+<h:commandButton id="userRegistrationCmdBtnId" value="REGISTER" 
+				action="userRegistration.processRegistration"/>
+</h:form> 
+</h:body>
+</html>
